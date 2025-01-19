@@ -62,12 +62,9 @@ function UserCreate() {
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
           />
         </div>
-        <Button
-          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-          onClick={() => {}}
-        >
+        <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
           作成
-        </Button>
+        </button>
       </form>
     </div>
   );
