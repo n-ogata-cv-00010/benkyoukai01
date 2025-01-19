@@ -13,24 +13,22 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <button
-          className="p-2 border-2 border-blue-500 bg-blue-100 rounded-md"
-          onClick={() => handleClickButton("/user/create")}
-        >
-          ユーザー作成
-        </button>
-        <button
-          className="p-2 border-2 border-green-500 bg-green-100 rounded-md"
-          onClick={() => handleClickButton("/post/create")}
-        >
-          投稿作成
-        </button>
-        <button
-          className="p-2 border-2 border-red-500 bg-red-100 rounded-md"
-          onClick={() => handleClickButton("/post/delete")}
-        >
-          投稿削除
-        </button>
+        <div className="flex gap-5">
+          <button
+            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 flex items-center gap-2"
+            onClick={() => handleClickButton("/post/create")}
+          >
+            <span>+</span>
+            投稿作成
+          </button>
+          <button
+            className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 flex items-center gap-2"
+            onClick={() => handleClickButton("/post/delete")}
+          >
+            <span>×</span>
+            投稿削除（一覧）
+          </button>
+        </div>
       </main>
       <footer className={styles.footer}>
         <a
