@@ -9,7 +9,7 @@
     "docker:up": "docker-compose up -d",
     "docker:down": "docker-compose down",
     "docker:ps": "docker-compose ps",
-    "setup": "pnpm i && pnpm docker:up && cd apps/api && pnpm dlx prisma generate && pnpm dlx prisma migrate dev"
+    "benkyoukai": "pnpm i && pnpm docker:up && cd apps/api && pnpm dlx prisma generate && pnpm dlx prisma migrate dev"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
