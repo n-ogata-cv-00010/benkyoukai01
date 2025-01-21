@@ -84,9 +84,12 @@ function PostList() {
                 <p className="text-sm text-gray-500 mt-2">
                   作成者: {post.author?.name || post.author?.email || "不明"}
                 </p>
+                <p className="text-sm text-gray-500 mt-2">
+                  投稿ID：<span className="text-sky-600">{post.id}</span>
+                </p>
               </div>
               <button
-                onClick={() => handleDeleteClick(post.id)}
+                onClick={() => handleDeleteClick(post.id + 1)}
                 className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
               >
                 削除
